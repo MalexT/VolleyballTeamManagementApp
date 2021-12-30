@@ -1,32 +1,24 @@
 # volleyball-team-management
 
-FIXME: description
+Volleyball team management web application for faculty purposes
 
-## Installation
-
-Download from http://example.com/FIXME.
+## Requirements
+MySql
+Leiningen
 
 ## Usage
 
-FIXME: explanation
+Change username and password in dbconfig file and then run:
 
-    $ java -jar volleyball-team-management-0.1.0-standalone.jar [args]
+    $ lein ring server
 
-## Options
-
-FIXME: listing of options this app accepts.
 
 ## Examples
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+User can perform CRUD operations on 
+ - Team, 
+ - Player and 
+ - Contract between Team and player (Tbd)
 
 ## License
 
