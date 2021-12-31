@@ -1,0 +1,6 @@
+{:database-name "volleyballteammanagement" 
+ :user-name "root" 
+ :password "root"
+ :adapter "mysql"
+ :server-name "localhost"
+ :migration-file-name "init.sql"}
