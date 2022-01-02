@@ -12,6 +12,10 @@ Change username and password in dbconfig file and then run:
 
     $ lein ring server
 
+If you kill the app and then want to run it again with command mentioned above
+You should drop database 'volleyballteammanagement' and then run:
+
+    $ lein ring server
 
 ## Examples
 

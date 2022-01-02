@@ -14,7 +14,6 @@
   :plugins [[lein-ring "0.12.5"]]
   :ring {:handler volleyball-team-management.core/-app
          :init volleyball-team-management.core/init
-         :destroy volleyball-team-management.core/destroy
          :port 4200}
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                                   [ring/ring-mock "0.4.0"]]}})
