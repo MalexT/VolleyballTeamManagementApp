@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
     <link href="../../../css/style.css" rel="stylesheet">
     <link href="../../../css/teamPlayer.css" rel="stylesheet">
-</head>
-<body>
-
-<div id="mySidebar" class="sidebar">
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="/index">Home</a>
       <a href="/teams">Teams</a>
@@ -19,44 +17,39 @@
     </div>
     <div id="main">
       <button class="openbtn" onclick="openNav()" style="pading-bot:15px">☰ Open Sidebar</button>
-    
-
-    <div class="row">
-    <div class="col-75">
-        <div class="container">
-        <form action="/models/players/insert" method="post" class="form" name="player">
-        
-            <div class="row">
-            <div class="col-75">
-                <h3>Create a player</h3>
-                <label for="name"> Player Name</label>
-                <input type="text" name="name" placeholder="John Doe">
-                <label for="height"> Height</label>
-                <input type="number" name="height" placeholder="191">
-                <label for="team"> Team</label>
-                <select name="teamId">
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/models/players/insert" method="post" class="form" name="player">
+              <div class="row">
+                <div class="col-75">
+                  <h3>Create a player</h3>
+                  <label for="name"> Player Name</label>
+                  <input type="text" name="name" placeholder="John Doe">
+                  <label for="height"> Height</label>
+                  <input type="number" name="height" placeholder="191">
+                  <label for="team"> Team</label>
+                  <select name="teamId">
                     {{#teams}}
-                        <option value="{{teamid}}">{{name}}</option>
+                    <option value="{{teamid}}">{{name}}</option>
                     {{/teams}}
-                </select>                
-                <label for="dateOfBirth" >Date of birth:</label>
-                <input type="date" name="dateOfBirth">
-                <label for="position">Position</label>
-                <select name="positionId" id="positionId">
+                  </select>
+                  <label for="dateOfBirth" >Date of birth:</label>
+                  <input type="date" name="dateOfBirth">
+                  <label for="position">Position</label>
+                  <select name="positionId" id="positionId">
                     {{#positions}}
-                        <option value="{{positionid}}">{{name}}</option>
+                    <option value="{{positionid}}">{{name}}</option>
                     {{/positions}}
-                </select>
-            </div>
-            </div>
-            <input type="submit" value="Create a player" class="btn-team">
-        </form>
+                  </select>
+                </div>
+              </div>
+              <input type="submit" value="Create a player" class="btn-team">
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-
-</div>
-
     <script src="../../../js/player.js"></script>
-</body>
+  </body>
 </html>
