@@ -17,8 +17,7 @@ Change username and password in dbconfig file and then run:
 
 User can perform CRUD operations on 
  - Team, 
- - Player and 
- - Contract between Team and player (Tbd)
+ - Player
 
 ## License
 
