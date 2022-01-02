@@ -1,5 +1,5 @@
 (ns volleyball-team-management.models.position
-  (:refer-clojure :exclude [get update])
+  (:refer-clojure :exclude [seqable? get update])
   (:require [clojure.java.jdbc :as jdbc]
             [clojure.edn :as edn]))
 

@@ -7,7 +7,7 @@
 
 "CREATE TABLE `league` (
   `leagueId` int NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`leagueId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;"
 
@@ -21,7 +21,7 @@
 
 "CREATE TABLE `position` (
   `positionId` int NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`positionId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;"
 
@@ -35,10 +35,10 @@
 
 "CREATE TABLE `teams` (
   `teamId` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `city` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `city` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `leagueId` int NOT NULL,
-  `state` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `state` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `foundationDate` datetime NOT NULL,
   PRIMARY KEY (`teamId`),
   KEY `league` (`leagueId`),
@@ -55,7 +55,7 @@
 
 "CREATE TABLE `players` (
   `playerId` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `dateOfBirth` datetime NOT NULL,
   `height` int NOT NULL,
   `teamId` int NOT NULL,
@@ -72,7 +72,7 @@
 "INSERT INTO `players` VALUES 
 (1,'Wilfredo Leon','1993-07-31 00:00:00',202,1,2),
 (2,'Tijana Boskovic','1994-05-07 00:00:00',193,2,3),
-(3,'Ivan Zaytsev','0000-00-00 00:00:00',201,3,4),
+(3,'Ivan Zaytsev','1981-06-07 00:00:00',201,3,4),
 (4,'Ervin Ngapeth','1980-07-21 00:00:00',197,2,5),
 (5,'Aleksa Markovic','1999-01-16 00:00:00',189,1,1);"
 
