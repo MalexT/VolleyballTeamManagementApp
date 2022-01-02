@@ -1,4 +1,4 @@
-# volleyball-team-management
+# Volleyball team management
 
 Volleyball team management web application for faculty purposes
 
