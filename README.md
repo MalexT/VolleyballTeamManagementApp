@@ -8,7 +8,9 @@ Leiningen
 
 ## Usage
 
-Change username and password in dbconfig file and then run:
+Change username and password in dbconfig file to match those on your computer (or create a new user with these credentials).
+You might need to change the port on which the app is running (you can find port number in project.clj file)
+and then run:
 
     $ lein ring server
 
